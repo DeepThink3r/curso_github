@@ -1,4 +1,4 @@
-def calculo_a_receber(horas,valor):
-    imposto = valor * .27
-    receber = horas * imposto
+def calculo_a_receber(horas,salario,taxa):
+    sem_taxa = horas * salario
+    receber = sem_taxa * (1 - .12)
     return receber
